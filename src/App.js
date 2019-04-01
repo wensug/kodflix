@@ -13,24 +13,41 @@ class App extends Component {
         <div className='container'>
           <div className='item'>
             <img src={cover_1} alt='Captain America' />
+            <div className='overlay'>
+              <h1>Captain America</h1>
+            </div>
           </div>
           <div className='item'>
             <img src={cover_2} alt='Sing' />
+            <div className='overlay'>
+              <h1>Sing</h1>
+            </div>
           </div>
-
           <div className='item'>
             <img src={cover_3} alt='Dr Strange' />
+            <div className='overlay'>
+              <h1>Dr Strange</h1>
+            </div>
           </div>
         </div>
         <div className='container'>
           <div className='item'>
             <img src={cover_4} alt='Exmachina' />
+            <div className='overlay'>
+              <h1>Exmachina</h1>
+            </div>
           </div>
           <div className='item'>
             <img src={cover_5} alt='Logan' />
+            <div className='overlay'>
+              <h1>Logan</h1>
+            </div>
           </div>
           <div className='item'>
             <img src={cover_6} alt='Passengers' />
+            <div className='overlay'>
+              <h1>Passengers</h1>
+            </div>
           </div>
         </div>
       </div>

@@ -7,10 +7,28 @@
 .item{
   flex: 1;
   padding: 30px;
+  border: 1px solid rgba(0, 0, 255, 0.514);
+  position: relative;
+
 }
 img{
   width: 100%;
 }
+.overlay { 
+  display: none;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: blanchedalmond;
+  opacity: .4;
+
+
+}
+.item:hover .overlay{
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
     .container{
         flex-direction: column;
