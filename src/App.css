@@ -7,26 +7,28 @@
 .item{
   flex: 1;
   padding: 30px;
-  border: 1px solid rgba(0, 0, 255, 0.514);
+  border: 2px solid rgb(248, 220, 177);
   position: relative;
+  overflow: hidden;
 
 }
 img{
   width: 100%;
 }
 .overlay { 
-  display: none;
+  transition: bottom ease 1s;
   position: absolute;
-  bottom: 0%;
+  bottom: -100%;
   left: 0%;
   width: 100%;
   background-color: blanchedalmond;
-  opacity: .4;
+  opacity: 0.4;
 
 
 }
 .item:hover .overlay{
-  display: block;
+  opacity: .4;
+  bottom: 0%;
 }
 
 @media only screen and (max-width: 600px) {
