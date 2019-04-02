@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Tvshow from './Tvshow';
 import cover_1 from './images/captainamerica.jpg'
 import cover_2 from './images/sing.jpg'
 import cover_3 from './images/drstrange.jpg'
@@ -11,48 +12,19 @@ class App extends Component {
     return (
       <div className="App">
         <div className='container'>
-          <div className='item'>
-            <img src={cover_1} alt='Captain America' />
-            <div className='overlay'>
-              <h1>Captain America</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={cover_2} alt='Sing' />
-            <div className='overlay'>
-              <h1>Sing</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={cover_3} alt='Dr Strange' />
-            <div className='overlay'>
-              <h1>Dr Strange</h1>
-            </div>
-          </div>
+          <Tvshow name='Captain America' cover={cover_1} />
+          <Tvshow name='Sing' cover={cover_2} />
+          <Tvshow name='Dr Strange' cover={cover_3} />
         </div>
         <div className='container'>
-          <div className='item'>
-            <img src={cover_4} alt='Exmachina' />
-            <div className='overlay'>
-              <h1>Exmachina</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={cover_5} alt='Logan' />
-            <div className='overlay'>
-              <h1>Logan</h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={cover_6} alt='Passengers' />
-            <div className='overlay'>
-              <h1>Passengers</h1>
-            </div>
-          </div>
+          <Tvshow name='Exmachina' cover={cover_4} />
+          <Tvshow name='Logan' cover={cover_5} />
+          <Tvshow name='Passengers' cover={cover_6} />
         </div>
       </div>
     );
   }
 }
+
 
 export default App;

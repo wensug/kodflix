@@ -6,7 +6,7 @@
 }
 .item{
   flex: 1;
-  padding: 30px;
+  padding: 25px;
   border: 2px solid rgb(248, 220, 177);
   position: relative;
   overflow: hidden;
