@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+  }
+  .item{
+    flex: 1;
+    padding: 25px;
+    border: 2px solid rgb(248, 220, 177);
+    position: relative;
+    overflow: hidden;
+  
+  }
+  img{
+    width: 100%;
+  }
+  .overlay { 
+    transition: bottom ease 1s;
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+    width: 100%;
+    background-color: blanchedalmond;
+    opacity: 0.4;
+  
+  
+  }
+  .item:hover .overlay{
+    opacity: .4;
+    bottom: 0%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .container{
+          flex-direction: column;
+      }
+  }
