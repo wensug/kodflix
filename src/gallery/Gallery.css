@@ -1,8 +1,8 @@
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
   .item{
-    flex: 1;
     padding: 25px;
     border: 2px solid rgb(248, 220, 177);
     position: relative;
@@ -19,17 +19,12 @@
     left: 0%;
     width: 100%;
     background-color: blanchedalmond;
-    opacity: 0.4;
+    opacity: 0.6;
   
   
   }
   .item:hover .overlay{
-    opacity: .4;
+    opacity: .6;
     bottom: 0%;
   }
   
-  @media only screen and (max-width: 600px) {
-      .container{
-          flex-direction: column;
-      }
-  }
