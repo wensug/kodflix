@@ -1,20 +1,21 @@
 import React from 'react';
 import './Gallery.css';
 import Tvshow from './Tvshow';
-import getGallery from './gallery-get';
+import getShows from '../shows';
 
 export default class Gallery extends React.Component {
     render() {
         return (
             <div className="container">
             {
-                getGallery().map(cover => {
+                getShows().map(show => {
                     return (
                         <Tvshow 
-                            id={cover.id} 
-                            name={cover.name} 
-                            cover={cover.cover} 
-                            key={cover.id} />
+                            id={show.id} 
+                            name={show.name} 
+                            cover={show.cover} 
+                            key={show.id} 
+                        />
                     );
                 })
 
