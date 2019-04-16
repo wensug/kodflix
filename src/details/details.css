@@ -1,0 +1,15 @@
+.details .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    padding: 0 30px;
+}
+
+.details .content .text{
+    margin-left: 40px;
+    font-size: 16px;
+    text-align: justify;
+}
+.details .content .cover img{
+    max-width:  60%;
+    border: 8px solid white;
+}
