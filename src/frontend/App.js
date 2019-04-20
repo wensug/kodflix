@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Gallery from './gallery/Gallery';
-import Details from '../details/Details';
+import Details from './details/Details';
 import NotFound from './NotFound';
 class App extends Component {
   render() {
