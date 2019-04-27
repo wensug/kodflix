@@ -1,6 +1,6 @@
 .details .content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));  
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));  
     padding: 0 30px; 
 }
 
@@ -8,6 +8,7 @@
     margin-left: 40px; 
     font-size: 16px;
     text-align: justify;
+    justify-content: center
 }
 .details .content .cover img{
     max-width:  60%;

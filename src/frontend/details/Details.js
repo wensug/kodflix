@@ -29,13 +29,13 @@ export default class Details extends React.Component {
                         </div>
                         <div className='cover'>
                             <img
-                            src={show.cover}
-                            alt={show.name} />
+                                src={show.cover}
+                                alt={show.name} />
+                        </div>
                     </div>
-                </div>
-                <Link to='/'>Back to the Web Page</Link>
+                    <Link to='/'>Back to the Web Page</Link>
                 </div > :
-        <Redirect to='./not-found' />
+                <Redirect to='./not-found' />
         );
     }
 }
