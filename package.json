@@ -16,7 +16,7 @@
     "_start-frontend": "react-scripts start",
     "_start-backend": "nodemon src/backend/app.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
