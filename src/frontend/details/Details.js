@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import './Details.css';
+import '../details/Details.css';
 
 export default class Details extends React.Component {
     constructor() {
