@@ -1,12 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-export default function Tvshow(props) {
+export default class Tvshow extends React.Component {
+  render() {
+    let { id, name } = this.props;
     return (
-      <Link to={`./${props.id}`} className='item'>
-        <img src={props.cover} alt={props.name} />
-        <div className='overlay'>
-          <h2>{props.name}</h2>
-        </div>
-      </Link>
-    );
-  }
+        <Link to={`/${id}`} className='item'>
+          <img src={require(`../common/images/${id}.jpg`)} alt={name} />
+          <div className='overlay'>
+            <h1>{name}</h1>
+          </div>
+        </Link>
+      );
+    }
+}
