@@ -1,6 +1,7 @@
 import React from 'react';
 import './Gallery.css';
 import Tvshow from './Tvshow';
+import Loading from '../common/loading/Loading';
 
 export default class Gallery extends React.Component {
     constructor() {
@@ -18,19 +19,22 @@ export default class Gallery extends React.Component {
         return (
             <div className="container">
                 {
-                    this.state.shows.map(show => {
-                        return (
-                            <Tvshow
-                                id={show.id}
-                                name={show.name}
-                                cover={show.cover}
-                                key={show.id}
-                            />
-                        );
-                    })
-
+                    this.state.shows.length ?
+                        this.state.shows.map(show => {
+                            return (
+                                <Tvshow
+                                    id={show.id}
+                                    name={show.name}
+                                    cover={show.cover}
+                                    key={show.id}
+                                />
+                            );
+                        }) :
+                        <Loading />
                 }
+
             </div>
+
         );
     }
 }

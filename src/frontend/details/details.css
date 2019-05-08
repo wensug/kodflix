@@ -11,6 +11,8 @@
     justify-content: center
 }
 .details .content .cover img{
-    max-width:  60%;
+    max-width:  58%;
     border: 8px solid white;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);
 }
