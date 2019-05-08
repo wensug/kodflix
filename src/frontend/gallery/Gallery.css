@@ -3,11 +3,11 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
   .item{
-    padding: 25px;
+    padding: 23px;
     border: 8px solid white;
     position: relative;
     overflow: hidden;
-  
+    height: 92%;
   }
   img{
     width: 100%;
