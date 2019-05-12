@@ -1,17 +1,20 @@
 .details .content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));  
-    padding: 0 30px; 
+    display: flex;
+    /* flex-direction: row; */
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));   */
+    /* padding: 0 30px; 
+    text-align: justify;
+    justify-content: center */
 }
 
 .details .content .text{
-    margin-left: 40px; 
+    /* margin-left: 40px;  */
     font-size: 16px;
-    text-align: justify;
-    justify-content: center
+   
 }
-.details .content .cover img{
-    max-width:  58%;
+.details .content .cover {
+    margin: auto;
+    /* max-width:  100%; */
     border: 8px solid white;
     background-color: rgb(245, 245, 245);
     box-shadow: 0 15px 20px -8px rgba(0, 0, 0, 0.2);

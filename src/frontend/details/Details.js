@@ -10,7 +10,7 @@ export default class Details extends React.Component {
     }
 
     componentDidMount() {
-        fetch('rest/shows')
+        fetch('/rest/shows')
             .then(response => response.json())
             .then(shows => {
                 let showId = this.props.match.params.showId
@@ -33,9 +33,9 @@ export default class Details extends React.Component {
 function DetailsContent({ show }) {
     return (
         <div className='details' >
-            <h1>{show.name}</h1>
             <div className='content'>
                 <div className='text'>
+                    <h1>{show.name}</h1>
                     {show.synopsis}
                 </div>
                 <div className='cover'>
