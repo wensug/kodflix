@@ -3,7 +3,6 @@ const path = require('path');
 const app = express();
 const db = require('./db');
 const port = process.env.PORT || 3001;
-//  const getShows = require('./shows');
 
 db.connect().then(dbo => {
     app.get('/rest/shows', (req, res) => {
