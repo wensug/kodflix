@@ -10,8 +10,6 @@ const url = process.env.NODE_ENV === 'production' ?
    module.exports = { connect };
 
 function connect() {
-    console.log("my db name", dbName);
-    console.log("my db url", url)
     return new Promise((resolve, reject) => {
          MongoClient.connect(url, { useNewUrlParser: true }, function (err, client) {
             assert.equal(null, err);
