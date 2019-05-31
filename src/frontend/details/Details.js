@@ -33,8 +33,9 @@ function DetailsContent({ show }) {
     <div className="details">
       <h1 className="details-title">{show.name}</h1>
       <div className="content">
-        <div className="text">{show.synopsis}</div>
-        <div className="cover">
+        <div className="content-row-text">{show.synopsis}
+        </div>
+        <div className="content-row">
           <img
             src={require(`../common/images/${show.id}.jpg`)}
             alt={show.name}
