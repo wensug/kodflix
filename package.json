@@ -11,7 +11,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "NODE_ENV=production npm-run-all -s build _start-backend",
